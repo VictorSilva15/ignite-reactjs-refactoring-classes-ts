@@ -1,16 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   background: #c72828;
   padding: 30px 0;
 
   header {
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 0 160px;
+    padding: 0 0.8rem 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     nav {
       div {
@@ -38,6 +39,12 @@ export const Container = styled.div`
           }
         }
       }
+    }
+
+    @media (max-width: 550px) {
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
   }
 `;
